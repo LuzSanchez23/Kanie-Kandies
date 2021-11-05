@@ -1,3 +1,18 @@
+div#message1 {
+    background-color: purple;
+    height: 50%;
+    padding: 15px 5px;
+    text-align: center;
+}
+div.showme {
+    display: block;
+}
+div.hideme {
+    display: none;
+}
+
+
+
 body {
     background-image: url(img/dogbones.jpg);
     background-repeat: none;
@@ -13,29 +28,52 @@ body {
     margin-top: 20px;
     margin-bottom: 10px;
 }
+.col-md-7{
+    float: left;
+  
+}
+.col-md-5{
+    float: left;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(66, 40, 25);
+    font-family: 'Indie Flower', cursive;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 .tittle {
     color: white;
     font-weight: 800;
     text-align: center;
-    font-size: 100px;
+    font-size: 80px;
 }
 .row2 {
     background-color: pink;
     width: 80%;
-    height: 500px;
+    height: 400px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 .poddle {
 width: auto;
-height: 450px;
+height: 400px;
 }
 .row3 {
-    background-color: white;
+    background-color: rgb(13, 175, 167);
     width: 60%;
-    height: 400px;
+    height: 150px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(66, 40, 25);
+    border: groove 5px black;
+}
+input {
+    width: 50%;
 }
