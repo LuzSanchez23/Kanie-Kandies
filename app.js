@@ -48,14 +48,14 @@ console.log (`You got a ` + assignGrade(22));
 
 
 
-function getAge() {
-    var mes1 = prompt("What is your name?");
-    alert(`Hello ${mes1}`);
-    var yourAge = prompt('Please enter your age');
-    alert(`${yourAge}`);
-    // document.getElementById("demo-6").innerHTML= "Hello " + mes1;
-}
-getAge();
+// function getAge() {
+//     var mes1 = prompt("What is your name?");
+//     alert(`Hello ${mes1}`);
+//     var yourAge = prompt('Please enter your age');
+//     alert(`${yourAge}`);
+//     // document.getElementById("demo-6").innerHTML= "Hello " + mes1;
+// }
+// getAge();
 
 function calculateDogAge() {
     var humanYear = document.getElementById("age").value;
@@ -63,6 +63,13 @@ function calculateDogAge() {
     document.getElementById("puppy").innerHTML = "Your doggie is " + realDogAge + " years old in human years!";
 }
 calculateDogAge();
+
+function calculateHumanAge() {
+    var dogYear = document.getElementById("ages").value;
+    var realHumanAge = dogYear * 7;
+    document.getElementById("human").innerHTML = "You will be " + realHumanAge + " years old in dog's years!";
+}
+calculateHumanAge();
 
 // for (var i=0; i<=20; i++) {
 //     if(i % 2 ===0) {
