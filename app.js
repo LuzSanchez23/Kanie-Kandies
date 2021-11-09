@@ -1,19 +1,15 @@
  //alerts message on the page
-alert(`Hello!\nWelcome to Kanie Kandies🐶`)
+alert(`Hello!`);
+// var yourAge = prompt("Please enter your age: ");
 
+// if (yourAge <= 18)
+//    alert("Users under the age of 18 unable to access this page")
+//    window.location.href='https://www.google.com/';
 
+// if (yourAge >= 18)
+//     alert("Welcome to Kanie Kandies🐶")
+//     window.location.href='https://luzsanchez23.github.io/Kanie-Kandies/';
 
-
-
-
-// function getAge() {
-//     var mes1 = prompt("What is your name?");
-//     alert(`Hello ${mes1}`);
-//     var yourAge = prompt('Please enter your age');
-//     alert(`${yourAge}`);
-//     // document.getElementById("demo-6").innerHTML= "Hello " + mes1;
-// }
-// getAge();
 
 function calculateDogAge() {
     var humanYear = document.getElementById("age").value;
