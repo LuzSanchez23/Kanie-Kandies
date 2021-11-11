@@ -1,92 +1,45 @@
+header {
+    background-color: white;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    float: left;
+  }
+  
+a {
+    display: block;
+  }
+li a {
+    color: rgb(61, 24, 3);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 25px;
+    padding: 15px;
+}
+li a:hover {
+    color: rgb(192, 3, 129);
+    text-decoration: none;
+    background-color: rgb(240, 180, 232);
+}
+
 div#message1 {
-    background-color: purple;
+    background-color: rgb(209, 196, 9);
     height: 50%;
     padding: 15px 5px;
     text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    font-family:cursive;
+    border: black dotted 3px;
 }
 div.showme {
     display: block;
 }
 div.hideme {
     display: none;
-}
-
-
-
-body {
-    background-image: url(img/dogbones.jpg);
-    background-repeat: none;
-    background-size: cover;
-}
-.row1 {
-    background-color: hotpink;
-    height: 150px;
-    width: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-.col-md-7{
-    float: left;
-  
-}
-.col-md-5{
-    float: left;
-    text-align: center;
-    font-size: 50px;
-    color: rgb(66, 40, 25);
-    font-family: 'Indie Flower', cursive;
-}
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-.tittle {
-    color: white;
-    font-weight: 800;
-    text-align: center;
-    font-size: 80px;
-}
-.row2 {
-    background-color: pink;
-    width: 80%;
-    height: 400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.poddle {
-width: auto;
-height: 400px;
-}
-.row3 {
-    background-color: rgb(13, 175, 167);
-    width: 60%;
-    height: 150px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    text-align: center;
-    color: rgb(66, 40, 25);
-    border: groove 5px black;
-}
-.row4 {
-    background-color:rgb(66, 40, 25) ;
-    width: 65%;
-    height: 150px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    text-align: center;
-    color: white;
-    
-   
-}
-input {
-    width: 50%;
 }
