@@ -59,18 +59,31 @@ div.hideme {
     margin-right: auto;
     
 }
-.row3 {
+.row3, h2{
     text-align: center;
     color: darkgreen;
     font-weight: 500px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 25px;
 }
+.row5 img {
+    width: 30%;
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .row4 {
    text-align: center;
+}
+.carousel {
+    width: 50%;
+    height: 40%;
+
 }
 .dose {
     text-align: center;
     color: darkgreen;
     font-size: 40px;
 }
+
