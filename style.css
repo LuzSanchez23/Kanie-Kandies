@@ -1,5 +1,6 @@
+
 header {
-    background-color: rgb(219, 137, 194);
+    background-color: rgb(28, 110, 28);
 }
 ul {
     list-style-type: none;
@@ -14,7 +15,7 @@ a {
     display: block;
   }
 li a {
-    color: rgb(61, 24, 3);
+    color: rgb(8, 4, 1);
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 500;
@@ -22,17 +23,16 @@ li a {
     padding: 15px;
 }
 li a:hover {
-    color: rgb(192, 3, 129);
+    color: gray;
     text-decoration: none;
-    background-color: rgb(240, 180, 232);
 }
 
 div#message1 {
     background-color: rgb(209, 196, 9);
-    height: 50%;
+    height: 20%;
     padding: 15px 5px;
     text-align: center;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: 600;
     font-family:cursive;
     border: black dotted 3px;
@@ -42,4 +42,35 @@ div.showme {
 }
 div.hideme {
     display: none;
+}
+.tittle {
+    color: darkgreen;
+    font-size: 80px;
+    text-align: center;
+}
+.mainpic {
+    border: darkgreen 2pc groove;
+  
+}
+.row2 img {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.row3 {
+    text-align: center;
+    color: darkgreen;
+    font-weight: 500px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+.row4 {
+   text-align: center;
+}
+.dose {
+    text-align: center;
+    color: darkgreen;
+    font-size: 40px;
 }
