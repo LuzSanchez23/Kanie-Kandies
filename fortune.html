@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Butcherman&family=East+Sea+Dokdo&family=Romanesco&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Butcherman&family=East+Sea+Dokdo&family=Romanesco&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <title>Fortune Teller</title>
     <style>
         body {
@@ -18,7 +16,6 @@
             background-size: cover;
             background-attachment: fixed;
         }
-
         button {
             font-size: 60px;
             background-color: transparent;
@@ -30,7 +27,6 @@
             display: flex;
             justify-content: center;
         }
-
         h2#btn {
             color: black;
             font-size: 40px;
@@ -38,7 +34,6 @@
             margin-top: 80px;
             font-family: 'Times New Roman', Times, serif;
         }
-
         h1,
         h2 {
             color: rgba(223, 7, 7, 0.933);
@@ -47,61 +42,53 @@
             text-align: center;
 
         }
-
         header {
             background-color: rgb(182, 7, 7);
-        }
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    float: left;
+  }
+  
+a {
+    display: block;
+  }
+li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 25px;
+    padding: 15px;
+}
+li a:hover {
+    color: gray;
+    text-decoration: none;
+    background-color: black;
+}
 
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        li {
-            float: left;
-        }
-
-        a {
-            display: block;
-        }
-
-        li a {
-            color: white;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-weight: 500;
-            font-size: 25px;
-            padding: 15px;
-        }
-
-        li a:hover {
-            color: gray;
-            text-decoration: none;
-            background-color: black;
-        }
-
-        div#message1 {
-            background-color: rgb(209, 196, 9);
-            height: 50%;
-            padding: 15px 5px;
-            text-align: center;
-            font-size: 15px;
-            font-weight: 600;
-            font-family: cursive;
-            border: black dotted 3px;
-        }
-
-        div.showme {
-            display: block;
-        }
-
-        div.hideme {
-            display: none;
-        }
+div#message1 {
+    background-color: rgb(209, 196, 9);
+    height: 50%;
+    padding: 15px 5px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    font-family:cursive;
+    border: black dotted 3px;
+}
+div.showme {
+    display: block;
+}
+div.hideme {
+    display: none;
+}
     </style>
 </head>
-
 <body>
     <header class="navbar">
         <ul>
@@ -114,13 +101,11 @@
     </header>
     <div id="message1"></div>
 
-    <h1>2021 has not been easy</h1>
-    <h2> See your fortune for what 2022 will hold It may not be all roses and sunshine <br><i>Look at your OWN
-            RISK...</i> </h2>
+    <h1>2021 has not been easy</h1> 
+    <h2> See your fortune for what 2022 will hold It may not be all roses and sunshine <br><i>Look at your OWN RISK...</i> </h2>
     <button onclick="tellFortune()">&#127801 Click here to see your Fortune &#127801</button>
     <!-- <button onclick="tellFortune">See your Fortune</button> -->
     <h2 id="btn"></h2>
     <script src="fortuneapp.js"></script>
 </body>
-
 </html>

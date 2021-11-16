@@ -25,3 +25,62 @@ switch (new Date().getDay()) {
 document.getElementById("message1").innerHTML = (`⭐Today's  special⭐ </br> ${day}`);
 console.log("Today us " + day);
 //Daily Specials ends here
+
+//cars starts here
+var corvett = {
+  make: "Corvett",
+  model: "Z06",
+  year: 2021,
+  available: true,
+  description: "Best Color Ever"
+}
+function display(){
+  var place= document.getElementById("submit");
+
+  for (value in corvett) {
+    place.innerHTML = "Make: " + corvett.make + "<br>" +
+    "Model: " + corvett.model + "<br>" +
+    "Year: " + corvett.year + "<br>" +
+    "Available: " + corvett.available + "<br>" +
+    "Description: " + corvett.description;
+  };
+}
+
+var maclaren = {
+  make: "Maclaren",
+  model: "GT",
+  year: 2022,
+  available: true,
+  description: "Luxury Sport Car Ever!"
+}
+function display2(){
+  var place2= document.getElementById("submit2");
+
+  for (value in maclaren) {
+    place2.innerHTML = "Make: " + maclaren.make + "<br>" +
+    "Model: " + maclaren.model + "<br>" +
+    "Year: " + maclaren.year + "<br>" +
+    "Available: " + maclaren.available + "<br>" +
+    "Description: " + maclaren.description;
+  };
+}
+
+var cadillac = {
+  make: "Cadillac",
+  model: "Escalate",
+  year: 2023,
+  available: true,
+  description: "Luxury Car Ever!"
+}
+function display3(){
+  var place3= document.getElementById("submit3");
+
+  for (value in cadillac) {
+    place3.innerHTML = "Make: " + cadillac.make + "<br>" +
+    "Model: " + cadillac.model + "<br>" +
+    "Year: " + cadillac.year + "<br>" +
+    "Available: " + cadillac.available + "<br>" +
+    "Description: " + cadillac.description;
+  };
+}
+//cars endss here

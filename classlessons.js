@@ -152,11 +152,11 @@
 //
 //objects starts here   
 //object literall
-const recipe = {
-    title: "mole",
-    serving: 2,
-    ingredients: [' Cinnamon', ' Cumin', ' Cocoa']
-  };
+// const recipe = {
+//     title: "mole",
+//     serving: 2,
+//     ingredients: [' Cinnamon', ' Cumin', ' Cocoa']
+//   };
   // var food=(`how to make ` ${recipe}["name"]);
   // console.log(`${recipe.title}`)
   // console.log(`serving: ${recipe.serving}`)

@@ -43,6 +43,10 @@ div.showme {
 div.hideme {
     display: none;
 }
+body {
+    background-color: rgb(194, 221, 152) ;
+
+}
 .tittle {
     color: darkgreen;
     font-size: 80px;
