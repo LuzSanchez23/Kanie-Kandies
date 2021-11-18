@@ -26,69 +26,62 @@ document.getElementById("message1").innerHTML = (`⭐Today's  special⭐ </br> $
 console.log("Today us " + day);
 //Daily Specials ends here
 
-//cars starts here
-var corvett = {
-  make: "Corvett",
-  model: "Z06",
-  year: 2021,
-  available: true,
-  description: "Best Color Ever"
+//movies starts here
+var toystory = {
+  movie: "Toy Story",
+  genre: "Children's Film",
+  year: 1995,
+  cast: "Woody & Buzz Lightyear"
 }
 function display() {
-  var place = document.getElementById("submit");
+  var place = document.getElementById("details");
+ 
 
-  for (value in corvett) {
-    place.innerHTML = "Make: " + corvett.make + "<br>" +
-      "Model: " + corvett.model + "<br>" +
-      "Year: " + corvett.year + "<br>" +
-      "Available: " + corvett.available + "<br>" +
-      "Description: " + corvett.description;
+  for (value in toystory ) {
+    place.innerHTML = "Movie: " + toystory.movie + "<br>" +
+      "Genre: " + toystory.genre + "<br>" +
+      "Year: " + toystory.year + "<br>" +
+      "Cast: " + toystory.cast + "<br>";
   };
+  
 }
-// function clear() {
-//   var place = document.getElementById("clear");
-//   place.innerHTML = "see details";
-// };
 
-var maclaren = {
-  make: "Maclaren",
-  model: "GT",
-  year: 2022,
-  available: true,
-  description: "Luxury Sport Car Ever!"
+
+var matilda = {
+  movie: "Matilda",
+  genre: "Family Comedy",
+  year: 1996,
+  cast: "Matilda & Mr. Wormwood"
 }
 function display2() {
-  var place2 = document.getElementById("submit2");
+  var place2 = document.getElementById("details2");
 
-  for (value in maclaren) {
-    place2.innerHTML = "Make: " + maclaren.make + "<br>" +
-      "Model: " + maclaren.model + "<br>" +
-      "Year: " + maclaren.year + "<br>" +
-      "Available: " + maclaren.available + "<br>" +
-      "Description: " + maclaren.description;
+  for (value in matilda) {
+    place2.innerHTML = "Movie: " + matilda.movie + "<br>" +
+      "Genre: " + matilda.genre + "<br>" +
+      "Year: " + matilda.year + "<br>" +
+      "Cast: " + matilda.cast + "<br>";
   };
 }
 
-var cadillac = {
-  make: "Cadillac",
-  model: "Escalate",
-  year: 2023,
-  available: true,
-  description: "Luxury Car Ever!"
+var monstersinc = {
+  movie: "Monsters Inc",
+  genre: "Children's Film",
+  year: 2001,
+  cast: "Sullivan, Boo & Mike Wazowski"
 }
 function display3() {
-  var place3 = document.getElementById("submit3");
+  var place3 = document.getElementById("details3");
 
-  for (value in cadillac) {
-    place3.innerHTML = "Make: " + cadillac.make + "<br>" +
-      "Model: " + cadillac.model + "<br>" +
-      "Year: " + cadillac.year + "<br>" +
-      "Available: " + cadillac.available + "<br>" +
-      "Description: " + cadillac.description;
+  for (value in monstersinc) {
+    place3.innerHTML = "Movie: " + monstersinc.movie + "<br>" +
+      "Genre: " + monstersinc.genre + "<br>" +
+      "Year: " + monstersinc.year + "<br>" +
+      "Cast: " + monstersinc.cast + "<br>";
   };
 }
 
-//cars endss here
+//movies endss here
 
 //classwork 11-16
 
