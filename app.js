@@ -41,23 +41,75 @@ function setImage() {
 }
 setInterval(setImage, 2000);
 
-const recipe = {
-  title: "Cookies",
-  serving: 2,
-  ingredients: [' Chocolate', ' Oats', ' Almond']
-};
-document.getElementById('title').innerHTML = 'CBD ' + recipe.title;
-document.getElementById('servingSize').innerHTML = 'Serving: ' + recipe.serving;
-document.getElementById('ingredients').innerHTML = 'Ingredients: ' + recipe.ingredients;
+var smalldog = {
+  oneQuarter: "1/4ml = 1.75mg",
+  halfQuarter: "1/2ml = 3.5mg",
+  thirdQuarter: "3/4ml = 5.25mg",
+  fullQuarter: "1ml = 7mg",
+}
+function display1() {
+  var place = document.getElementById("details1");
 
-// const recipe = {
-//   title: "Gummie",
-//   serving: 2,
-//   ingredients: [' Chocolate', ' Oats', ' Almond']
-// };
-// document.getElementById('title').innerHTML = 'CBD ' + recipe.title;
-// document.getElementById('servingSize').innerHTML = 'Serving: ' + recipe.serving;
-// document.getElementById('ingredients').innerHTML = 'Ingredients: ' + recipe.ingredients;
+  for (value in smalldog) {
+    place.innerHTML = "One Quarter: " + smalldog.oneQuarter + "<br>" +
+      "Half Quarter: " + smalldog.halfQuarter + "<br>" +
+      "Third Quarter: " + smalldog.thirdQuarter + "<br>" +
+      "Full Quarter: " + smalldog.fullQuarter + "<br>";
+  };
+}
+
+var mediumdog = {
+  oneQuarter: "1/4ml = 4.25mg",
+  halfQuarter: "1/2ml = 8.5mg",
+  thirdQuarter: "3/4ml = 12.75mg",
+  fullQuarter: "1ml = 17mg",
+}
+function display2() {
+  var place = document.getElementById("details2");
+
+  for (value in mediumdog) {
+    place.innerHTML = "One Quarter: " + mediumdog.oneQuarter + "<br>" +
+      "Half Quarter: " + mediumdog.halfQuarter + "<br>" +
+      "Third Quarter: " + mediumdog.thirdQuarter + "<br>" +
+      "Full Quarter: " + mediumdog.fullQuarter + "<br>";
+  };
+}
+
+var largedog = {
+  oneQuarter: "1/4ml = 6.75mg",
+  halfQuarter: "1/2ml = 13.5mg",
+  thirdQuarter: "3/4ml = 20.255mg",
+  fullQuarter: "1ml = 27mg",
+}
+function display3() {
+  var place = document.getElementById("details3");
+
+  for (value in largedog) {
+    place.innerHTML = "One Quarter: " + largedog.oneQuarter + "<br>" +
+      "Half Quarter: " + largedog.halfQuarter + "<br>" +
+      "Third Quarter: " + largedog.thirdQuarter + "<br>" +
+      "Full Quarter: " + largedog.fullQuarter + "<br>";
+  };
+}
+
+var giantdog = {
+  oneQuarter: "1/4ml = 6.75mg",
+  halfQuarter: "1/2ml = 13.5mg",
+  thirdQuarter: "3/4ml = 20.255mg",
+  fullQuarter: "1ml = 27mg",
+}
+function display4() {
+  var place = document.getElementById("details4");
+
+  for (value in giantdog) {
+    place.innerHTML = "One Quarter: " + giantdog.oneQuarter + "<br>" +
+      "Half Quarter: " + giantdog.halfQuarter + "<br>" +
+      "Third Quarter: " + giantdog.thirdQuarter + "<br>" +
+      "Full Quarter: " + giantdog.fullQuarter + "<br>";
+  };
+}
+
+
 
 
 

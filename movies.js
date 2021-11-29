@@ -36,16 +36,14 @@ var toystory = {
 function display() {
   var place = document.getElementById("details");
  
-
   for (value in toystory ) {
     place.innerHTML = "Movie: " + toystory.movie + "<br>" +
       "Genre: " + toystory.genre + "<br>" +
       "Year: " + toystory.year + "<br>" +
       "Cast: " + toystory.cast + "<br>";
   };
-  
 }
-
+ 
 
 var matilda = {
   movie: "Matilda",
@@ -150,26 +148,26 @@ describePet (chico);
 
 //created a new constructor function favorite artist
 //minumiun 5 keys values pairs
-function Artist(name, genre, group, album, song) { 
-  this.name= name; 
-  this.genre= genre;
-  this.group= group;
-  this.album= album;
-  this.song= [song];
-  }
+// function Artist(name, genre, group, album, song) { 
+//   this.name= name; 
+//   this.genre= genre;
+//   this.group= group;
+//   this.album= album;
+//   this.song= [song];
+//   }
 
-//created a method 
-Artist.prototype.read= function() {
-  document.getElementById("artist").innerHTML= 
-  "Name " + this.name + "</br>" +
-  "Genre " + this.genre + "</br>" +
-  "Group "+ this.group + "</br>" +
-  "Album" + this.album + "</br>" +
-  "Song" + this.song;
-}
-//initiate a new instance
-var artist= new Artist("Backstreet Boys", "Pop", "no", "Millenium", ["I Want It That Way", "Everybody"])
-artist.read();
+// //created a method 
+// Artist.prototype.read= function() {
+//   document.getElementById("artist").innerHTML= 
+//   "Name " + this.name + "</br>" +
+//   "Genre " + this.genre + "</br>" +
+//   "Group "+ this.group + "</br>" +
+//   "Album" + this.album + "</br>" +
+//   "Song" + this.song;
+// }
+// //initiate a new instance
+// var artist= new Artist("Backstreet Boys", "Pop", "no", "Millenium", ["I Want It That Way", "Everybody"])
+// artist.read();
 
 
 

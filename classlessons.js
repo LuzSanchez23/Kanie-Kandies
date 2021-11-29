@@ -1,9 +1,6 @@
 
 //objects starts here
 
-
-
-
 // //specials 1st lesson starts here
 // // //get the current date
 // const today = new Date();
@@ -214,3 +211,25 @@
 //     }
 //     console.log('My ' + choiceNum + choiceNumSuffix + ' choice is ' + choices[i]);
 // }
+
+
+
+// const recipe = {
+//   title: "Cookies",
+//   serving: 2,
+//   ingredients: [' Chocolate', ' Oats', ' Almond']
+// };
+// document.getElementById('title').innerHTML = 'CBD ' + recipe.title;
+// document.getElementById('servingSize').innerHTML = 'Serving: ' + recipe.serving;
+// document.getElementById('ingredients').innerHTML = 'Ingredients: ' + recipe.ingredients;
+
+// const recipe = {
+//   title: "Gummie",
+//   serving: 2,
+//   ingredients: [' Chocolate', ' Oats', ' Almond']
+// };
+// document.getElementById('title').innerHTML = 'CBD ' + recipe.title;
+// document.getElementById('servingSize').innerHTML = 'Serving: ' + recipe.serving;
+// document.getElementById('ingredients').innerHTML = 'Ingredients: ' + recipe.ingredients;
+
+
