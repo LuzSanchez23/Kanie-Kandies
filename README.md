@@ -6,6 +6,6 @@ Date Project Start: October 28th, 2021
 
 Denver Colorado
 
-Live Link: https://luzsanchez23.github.io/Kanie-Kandies/
+Live Link: 
 
 Languages: CSS, HTML & Java Script
