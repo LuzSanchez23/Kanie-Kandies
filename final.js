@@ -6,7 +6,7 @@ const days = document.getElementById('days');
 const container = document.getElementById('container');
 const currentYear = new Date ().getFullYear();
 
-const christmasDate = new Date (`December 25 ${currentYear} 00:00:00`);
+const christmasDate = new Date(`December 25 ${currentYear} 00:00:00`);
 
 function updateContainer() {
     const timeNow = new Date();
