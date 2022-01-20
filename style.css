@@ -100,4 +100,37 @@ body {
     margin-right: auto;
 }
 
+/*FORM CSS*/
+.error {
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
+  }
+  .btn {
+      color: blue;
+  }
+  form {
+      background-color: rgb(209, 196, 9);
+      max-width: 780px;
+      margin: 70px auto;
+      padding: 16px;
+      border: 3px dotted darkgreen;
+      color: darkgreen;
+      font-weight: bold;
+      font-size: 20px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+      
+   input:invalid {
+       border: 2px solid red;
+   } 
+  
+    input:valid {
+      border: 2px solid black;
+  } 
+  
+  input:checked {
+      height: 50px;
+      width: 50px;
+    }
 

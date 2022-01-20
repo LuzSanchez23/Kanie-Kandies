@@ -1,3 +1,79 @@
+//FORM STARTS HERE
+function printError(elemId, hintMsg) {
+  document.getElementById(elemId).innerHTML = hintMsg;
+}
+
+//Defining a function to validate form
+function validateForm() {
+  //Retrieving the calues of form elements
+  var name = document.contactForm.name.value;
+  var email = document.contactForm.email.value;
+  var mobile = document.contactForm.mobile.value;
+  var gender = document.contactForm.gender.value;
+  //Define error variables with a default value
+  var nameErr = lastErr = emailErr = mobileErr = countryErr = genderErr = true;
+
+  //validate first name
+  if (name == "") {
+    printError("nameErr", "Please enter your first name");
+  } else {
+    var regex = /^[a-zA-Z\s]+$/;
+    if (regex.test(name) == false) {
+      printError("nameErr", "please enter a valid first name");
+    } else {
+      printError("nameErr", "");
+      nameErr = false;
+    }
+
+  }
+  //validate email
+  if (email == "") {
+    printError("emailErr", "Please enter your email address");
+  } else {
+    var regex = /^\S+@\S+\.\S+$/; //comparable to a pattern in html5
+    if (regex.test(email) == false) {
+      printError("emailErr", "please enter a valid email address");
+    } else {
+      printError("emailErr", "");
+      emailErr = false;
+    }
+  }
+  //validate mobile
+  if (mobile == "") {
+    printError("mobileErr", "Please enter your mobile number");
+  } else {
+    var regex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;;
+    if (regex.test(mobile) == false) {
+      printError("mobileErr", "please enter a valid 10 digits");
+    } else {
+      printError("mobileErr", "");
+      mobileErr = false;
+    }
+  }
+  //validate gender
+  if (gender == " ") {
+    printError("genderErr", "Please select your gender");
+  } else {
+    printError("genderErr", " ");
+    genderErr = false;
+  }
+  //Prevent the form from being submitted if there are any errors
+  if ((nameErr || emailErr || mobileErr || genderErr) == true) {
+    return false;
+  } else {
+    // Creating a string from input data for preview
+    var dataPreview = "You've entered the following details: \n" +
+      "First Name: " + name + "\n" +
+      "Email Address: " + email + "\n" +
+      "Mobile Number: " + mobile + "\n" +
+      "Gender: " + gender + "\n";
+    // Display input data in a dialog box before submitting the form
+    alert(dataPreview);
+  }
+
+};
+//FORM ENDS HERE
+
 //Daily Specials starts here
 var day;
 switch (new Date().getDay()) {
