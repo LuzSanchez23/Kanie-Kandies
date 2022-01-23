@@ -1,36 +1,35 @@
 //FORM STARTS HERE
+console.log("JS is alive");
+
 function printError(elemId, hintMsg) {
   document.getElementById(elemId).innerHTML = hintMsg;
 }
 
-//Defining a function to validate form
 function validateForm() {
-  //Retrieving the calues of form elements
+
   var name = document.contactForm.name.value;
   var email = document.contactForm.email.value;
   var mobile = document.contactForm.mobile.value;
-  var gender = document.contactForm.gender.value;
   //Define error variables with a default value
-  var nameErr = lastErr = emailErr = mobileErr = countryErr = genderErr = true;
+  var nameErr = emailErr = mobileErr = true;
 
-  //validate first name
   if (name == "") {
-    printError("nameErr", "Please enter your first name");
+    printError("nameErr", "Please enter your full name");
   } else {
     var regex = /^[a-zA-Z\s]+$/;
     if (regex.test(name) == false) {
-      printError("nameErr", "please enter a valid first name");
+      printError("nameErr", "please enter a valid full name");
     } else {
       printError("nameErr", "");
       nameErr = false;
     }
 
   }
-  //validate email
+
   if (email == "") {
     printError("emailErr", "Please enter your email address");
   } else {
-    var regex = /^\S+@\S+\.\S+$/; //comparable to a pattern in html5
+    var regex = /^\S+@\S+\.\S+$/;
     if (regex.test(email) == false) {
       printError("emailErr", "please enter a valid email address");
     } else {
@@ -38,7 +37,7 @@ function validateForm() {
       emailErr = false;
     }
   }
-  //validate mobile
+
   if (mobile == "") {
     printError("mobileErr", "Please enter your mobile number");
   } else {
@@ -50,27 +49,17 @@ function validateForm() {
       mobileErr = false;
     }
   }
-  //validate gender
-  if (gender == " ") {
-    printError("genderErr", "Please select your gender");
-  } else {
-    printError("genderErr", " ");
-    genderErr = false;
-  }
-  //Prevent the form from being submitted if there are any errors
-  if ((nameErr || emailErr || mobileErr || genderErr) == true) {
+
+  if ((nameErr || emailErr || mobileErr) == true) {
     return false;
   } else {
-    // Creating a string from input data for preview
     var dataPreview = "You've entered the following details: \n" +
       "First Name: " + name + "\n" +
       "Email Address: " + email + "\n" +
-      "Mobile Number: " + mobile + "\n" +
-      "Gender: " + gender + "\n";
-    // Display input data in a dialog box before submitting the form
+      "Mobile Number: " + mobile + "\n";
+
     alert(dataPreview);
   }
-
 };
 //FORM ENDS HERE
 
