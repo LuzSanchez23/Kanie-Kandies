@@ -8,12 +8,18 @@ body {
     color: hotpink;
 }
 /*Nav bar stars here*/
+.navbar{
+    background-color: rgb(28, 110, 28);
+}
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     background-color: rgb(199, 108, 153);
 }
+li {
+    float: left;
+  }
 li a {
     color: white;
     text-decoration: none;
